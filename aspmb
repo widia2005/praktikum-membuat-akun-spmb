@@ -1,0 +1,17 @@
+<?php
+// menyimpan server, username =, password, dan database pada variabel
+$host ="localhost"; 
+$username= "root";
+$password="";
+$database="db_aspmb";
+
+// membuat koneksi ke database
+$koneksi= mysqli_connect($host, $username, $password, $database); 
+
+// mengeccek koneksi
+if (!$koneksi){
+    die ("koneksi gagal ") . mysqli_connect_error());
+}
+
+echo "koneksi berhasil";
+?>
